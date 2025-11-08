@@ -74,23 +74,31 @@ export default defineConfig([
 # Основные типы в TypeScript
 ## Примитивные типы
 ### string - строки
-```let name: string = "Иван";```
+```
+let name: string = "Иван";
+```
 ### number - числа (целые и дробные)
 ```
 let age: number = 25;
 let pi: number = 3.14;
 ```
 ### boolean - логические значения
-```let isActive: boolean = true;```
+```
+let isActive: boolean = true;
+```
 ### null и undefined - специальные типы
 ```
 let maybeNull: null = null;
 let maybeUndefined: undefined = undefined;
 ```
 ### symbol - уникальные идентификаторы
-```let sym1: symbol = Symbol("id");```
+```
+let sym1: symbol = Symbol("id");
+```
 ### bigint - большие целые числа
-```let big: bigint = 123456789012345678901234567890n;```
+```
+let big: bigint = 123456789012345678901234567890n;
+```
 ## Составные типы
 ### Array - массивы
 ```
@@ -98,7 +106,9 @@ let numbers: number[] = [1, 2, 3];
 let arr: Array<string> = ["a", "b", "c"];
 ```
 ### Tuple - кортежи (массивы с фиксированным размером)
-```let person: [string, number] = ["Иван", 25];```
+```
+let person: [string, number] = ["Иван", 25];
+```
 ### Enum - перечисления
 ```
 enum Color {
@@ -119,7 +129,9 @@ let unknownVar: unknown = "Hello";
 ```
 ## Объектные типы
 ### Object - базовый тип объекта
-```let obj: object = { name: "Иван" };```
+```
+let obj: object = { name: "Иван" };
+```
 ### Interface - описание структуры объекта
 ```
 interface User {
@@ -157,7 +169,9 @@ interface User {
 ```
 ## Объединения и пересечения
 ### Union - объединение типов
-```let id: string | number;```
+```
+let id: string | number;
+```
 ### Intersection - пересечение типов
 ```
 interface Person {
@@ -202,6 +216,8 @@ type Readonly<T> = {
 }
 ```
 ### Conditional Types - условные типы
-```type IsString<T> = T extends string ? true : false;```
+```
+type IsString<T> = T extends string ? true : false;
+```
 
 Это основные типы TypeScript, которые покрывают большинство потребностей при разработке. Каждый тип можно комбинировать с другими для создания более сложных структур данных.
